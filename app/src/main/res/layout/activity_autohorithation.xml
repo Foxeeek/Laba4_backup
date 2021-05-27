@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Autohorithation">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Авторизуйтесь"
+        android:layout_centerHorizontal="true"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="36dp"
+        android:id="@+id/mainText"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/login"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/mainText"
+        android:hint="Ваш email"
+        android:layout_marginTop="36dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:paddingHorizontal="20dp"
+        android:layout_below="@+id/login"
+        android:hint="Ваш пароль"
+        android:layout_marginTop="10dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/BtnCase"
+        android:layout_below="@+id/password"
+        android:weightSum="2"
+        android:paddingHorizontal="16dp"
+        >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Увійти"
+            android:id="@+id/EnterBtn"
+            />
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:text="Реєстрація"
+            android:id="@+id/ToRegisterBtn"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
